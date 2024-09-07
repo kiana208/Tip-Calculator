@@ -1,0 +1,26 @@
+@import "./media-mixin";
+
+.container {
+  .splitter-box {
+    .tip-form {
+      .row {
+        .col-md-6 {
+          &:first-child {
+            .select-tip {
+              .percent-btns {
+                .tip-percent {
+                  @include mq-max-992 {
+                    width: 45%;
+                  }
+                  &.tip-custom {
+                    @extend .tip-percent;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

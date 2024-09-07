@@ -1,0 +1,81 @@
+body {
+  background-color: map-get($colors, clr-Strong-cyan);
+  font-weight: 700;
+  font-size: 24px;
+  min-height: 100vh;
+  .container {
+    .splitter-box {
+      .tip-form {
+        .row {
+          padding: 1.5rem 1rem 2rem;
+          background-color: map-get($colors, clr-White);
+          border-radius: 20px;
+          .bill-section {
+            .bill-title {
+              font-size: clamp(1.2rem, 1.5vw, 2.5vw);
+              color: map-get($colors, clr-Dark-grayish-cyan);
+            }
+            .bill-input {
+              padding: 0.5rem 1rem 0.5rem 10px;
+              background-color: map-get($colors, clr-Very-light-grayish-cyan);
+              input {
+                background-color: map-get($colors, clr-Very-light-grayish-cyan);
+                &::-webkit-inner-spin-button {
+                  -webkit-appearance: none;
+                }
+              }
+            }
+          }
+          .select-tip {
+            .select-tip-title {
+              font-size: clamp(1.2rem, 1.5vw, 2.5vw);
+              color: map-get($colors, clr-Dark-grayish-cyan);
+            }
+          }
+          .number-people {
+            .people-title {
+              font-size: clamp(1.2rem, 1.5vw, 2.5vw);
+              color: map-get($colors, clr-Dark-grayish-cyan);
+            }
+            .error-msg {
+              font-size: clamp(0.8rem, 1.5vw, 2.5vw);
+              bottom: 4rem;
+            }
+            .people-input {
+              padding: 0.5rem 1rem;
+              background-color: map-get($colors, clr-Very-light-grayish-cyan);
+              input {
+                background-color: map-get($colors, clr-Very-light-grayish-cyan);
+                &::-webkit-inner-spin-button {
+                  -webkit-appearance: none;
+                }
+              }
+            }
+          }
+          .tip-calc {
+            background-color: map-get($colors, clr-Very-dark-cyan);
+            border-radius: 20px;
+            .tips-calc-show {
+              .tip-total {
+                .tip-header-title {
+                  h5 {
+                    color: map-get($colors, clr-White);
+                  }
+                  span {
+                    color: map-get($colors, clr-Light-grayish-cyan);
+                    font-size: 1rem;
+                  }
+                }
+                .tip-resault {
+                  span {
+                    color: map-get($colors, clr-dark-cyan);
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

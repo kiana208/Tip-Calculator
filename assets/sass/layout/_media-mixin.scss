@@ -1,0 +1,5 @@
+@mixin mq-max-992 {
+  @media (max-width: 992px) {
+    @content;
+  }
+}

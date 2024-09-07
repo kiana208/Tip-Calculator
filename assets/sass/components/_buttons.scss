@@ -1,0 +1,54 @@
+.container {
+  .splitter-box {
+    .tip-form {
+      .row {
+        .col-md-6 {
+          &:first-child {
+            .select-tip {
+              .percent-btns {
+                .tip-percent {
+                  font-size: 1.75rem;
+                  width: 30%;
+                  border: 0;
+                  padding: 0.3rem 0.6rem;
+                  background-color: map-get($colors, clr-Very-dark-cyan);
+                  color: map-get($colors, clr-White);
+                  &.tip-custom {
+                    background-color: map-get(
+                      $colors,
+                      clr-Very-light-grayish-cyan
+                    );
+                    color: map-get($colors, clr-Very-dark-cyan);
+                    width: 30%;
+                    padding: 0.3rem 0.6rem;
+                    &::-webkit-inner-spin-button {
+                      -webkit-appearance: none;
+                    }
+                    &:focus {
+                      border: 2px solid map-get($colors, clr-dark-cyan) !important;
+                    }
+                    &::placeholder {
+                      text-align: center;
+                      color: map-get($colors, clr-Dark-grayish-cyan);
+                    }
+                  }
+                }
+              }
+            }
+          }
+          &:last-child {
+            .tip-calc {
+              .reset-values {
+                color: map-get($colors, clr-Very-dark-cyan);
+                background-color: map-get($colors, clr-dark-cyan);
+                border: none;
+                border-radius: 4px;
+                font-size: 1.3rem;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

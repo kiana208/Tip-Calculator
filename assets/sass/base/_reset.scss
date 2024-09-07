@@ -1,0 +1,15 @@
+* {
+  padding: 0;
+  margin: 0;
+  outline: none;
+  box-sizing: border-box;
+  font-family: "Space Mono", monospace;
+}
+input {
+  border: none;
+  font-weight: 700;
+  color: map-get($colors, clr-Very-dark-cyan);
+}
+button {
+  font-weight: 700;
+}
